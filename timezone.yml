@@ -1,0 +1,9 @@
+---
+
+- name: Set timezone
+  hosts: all
+  tasks:
+    - name: Set timezone to Asia/Tokyo
+      community.general.timezone:
+        name: Asia/Tokyo
+
